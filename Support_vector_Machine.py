@@ -18,21 +18,16 @@ y = df.target
 
 X_train,X_test,y_train,y_test =train_test_split(X,y, test_size=0.3)
 
-# from sklearn.svm import SVC
-# model = SVC()
-# print(model.fit(X_train,y_train))
-# print(model.score(X_test,y_test))  # 96.67%
+from sklearn.svm import SVC
+model = SVC()
+print(model.fit(X_train,y_train))
+print(model.score(X_test,y_test))  # 96.67%
 
 
-# # by tunning parameters
-# model_c = SVC(C=10)
-# print(model_c.fit(X_train,y_train))
-# print(model_c.score(X_test,y_test))  # 100%
+# by tunning parameters
+model_c = SVC(C=10)
+print(model_c.fit(X_train,y_train))
+print(model_c.score(X_test,y_test))  # 100%
 
 
 
-from sklearn import tree
-model = tree.DecisionTreeClassifier()
-model.fit(X_train,y_train)
-print(model.predict([[4.8,3.0,1.5,0.3]]))
-print(model.score(X_test,y_test))
