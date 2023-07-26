@@ -36,8 +36,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import KFold
 kf = KFold(n_splits=4)
 
-# for train ,test in kf.split([1,2,3,4,5,6,7]):
-#     print(train,test)
+for train ,test in kf.split([1,2,3,4,5,6,7]):
+    print(train,test)
 
 
 
