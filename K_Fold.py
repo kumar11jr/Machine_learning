@@ -14,7 +14,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 # spilting datasets
 from sklearn.model_selection import train_test_split
-# X_train,X_test,y_train,y_test =train_test_split(df.data , df.target, test_size=0.1)
+# X_train,X_test,y_train,y_test = train_test_split(df.data , df.target, test_size=0.1)
 
 
 
